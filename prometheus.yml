@@ -4,4 +4,19 @@ global:
 scrape_configs:
   - job_name: prometheus
     static_configs:
-      - targets: ["172.16.10.146:8000"]
+      - targets: ["a9fl0q86e3.execute-api.us-east-1.amazonaws.com"]
+    scheme: https
+    metrics_path: /dev/metrics
+
+
+
+# global:
+#   scrape_interval: 4s
+
+# scrape_configs:
+#   - job_name: prometheus
+#     static_configs:
+#       - targets: ["a9fl0q86e3.execute-api.us-east-1.amazonaws.com:8000"]
+
+# 172.16.10.146:8000
+# ["a9fl0q86e3.execute-api.us-east-1.amazonaws.com:8000"]
